@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vivian.smartshoppers.MapsActivity">
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/abc_action_menu_layout" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_list_selector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="4dp" >
+
+        <RadioButton
+            android:id="@+id/request_helper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Request A Helper"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@color/LightGreen"
+            android:textColor="@color/SapGreen"
+            android:textStyle="bold"
+            android:onClick="Grocery_List"/>
+
+        <View
+            android:id="@+id/VerticalLine"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+        <RadioButton
+            android:id="@+id/be_helper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Be A Helper"
+            android:layout_weight="1"
+            android:background="@color/LightBlue"
+            android:textColor="@color/DarkBlue"
+            android:textStyle="bold"/>
+    </RadioGroup>
+</FrameLayout>

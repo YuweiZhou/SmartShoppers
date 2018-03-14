@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="vivian.smartshoppers.HelperListActivity"
+    tools:showIn="@layout/activity_helper_list"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/askRequestHelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Below are the helpers available."
+        android:textSize="7pt"
+        android:textColor="@color/DarkGreen"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/askRequestHelper2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select a helper:"
+        android:textColor="@color/DarkGreen"
+        android:textSize="7pt"
+        android:textStyle="bold" />
+
+    <Button
+    android:id="@+id/ConfirmHelper"
+    style="?android:textAppearanceSmall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Confirm"
+    android:textStyle="bold"
+    android:onClick="GroceryListPage"
+        android:background="@color/LightGreen"/>
+
+    <Button
+        android:id="@+id/RefreshHelperList"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Refresh Page"
+        android:textStyle="bold"
+        android:background="@color/DarkGreen"
+        android:onClick="refreshPage"/>
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:name="vivian.smartshoppers.HelperListFragment"
+        android:layout_width="match_parent"
+        android:listSelector="@color/LightGrey"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

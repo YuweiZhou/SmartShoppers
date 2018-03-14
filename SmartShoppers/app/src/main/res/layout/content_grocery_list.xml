@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="vivian.smartshoppers.GroceryListActivity"
+    tools:showIn="@layout/activity_grocery_list"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/ready_to_go"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ready to go :)"
+        android:textStyle="bold"
+        android:background="@color/LightOrange"
+        android:onClick="confirm_page"/>
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="vivian.smartshoppers.GroceryListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/list_fragment" />
+
+
+
+
+
+</LinearLayout>
